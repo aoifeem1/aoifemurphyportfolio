@@ -1,0 +1,170 @@
+/* Sets the light grey background for the entire page */
+body{
+    background-color: rgb(230, 226, 226);
+}
+
+/* Ensures all images have the same size and maintain aspect ratio */
+img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 40px;
+}
+
+/* Styles for the main header */
+.custom-header {
+    background-color: #144f63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Styles the "About Me" section */
+.about-me{
+    background-color: #b6c1cb; 
+    padding: 20px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; 
+}
+
+/* Centers and bolds the "About Me" heading */
+.about-me h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styles the "Skills & Interests" section */
+.table{
+    display: flex;
+    flex-direction: column;
+    background-color: #b6c1cb; 
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Bolds the heading */
+.table h2{
+    font-weight: bold;
+}
+
+/* Styles the table */
+table{
+    width: 100%;
+    background-color: white; 
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+/* Styles table cells */
+td, th {
+    width: 50%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+/* Aligns "Future Goals" and "My Projects" side by side */
+.side-by-side {
+    display: flex; 
+    justify-content:  center;
+    gap: 20px;  
+}
+
+/* Background styling for "More About Me" section */
+.more-about-me{
+    background-color: #b6c1cb; 
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* Centers and bolds heading */
+.more-about-me h2{
+    font-weight: bold;
+    text-align: center
+}
+
+/* Styles Future Goals*/
+.future-goals{
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    padding: 20px
+}
+
+.future-goals h3{
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bold;
+}
+
+/* Styles My Projects*/
+.my-projects{
+    background-color: #f8f9fa;
+    border-radius: 10px; 
+    padding: 20px
+}
+
+.my-projects h3{
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bold;
+}
+
+/* Styles  Reflection Section*/
+.reflection{
+    background-color: #b6c1cb; 
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Centers and bolds the "Reflection" heading */
+.reflection h2{
+    font-weight: bold;
+    text-align: center;
+}
+hr {
+    border: 0;
+    border-top: 3px solid #144f63; 
+    margin: 20px 0;
+}
+/* Fix section scroll positioning */
+div[id] {
+    scroll-margin-top: 100px; /* Adjust based on navbar height */
+    padding-top: 20px; /* Extra space for visibility */
+}
+
+/* When the screen width is 460px or less (e.g., mobile devices), adjust the styling */
+@media (max-width: 460px) {
+    body {
+        background-color: white
+    }
+
+    .custom-header,
+    .about-me,
+    .table,
+    .more-about-me,
+    .reflection {
+        background-color: white;
+        color: #144f63; 
+    }
+
+    table {
+        background-color: #b6c1cb;
+        color: black;
+    }
+}
+
